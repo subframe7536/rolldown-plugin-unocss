@@ -1,0 +1,32 @@
+{
+  "name": "rolldown-plugin-unocss",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Add basic UnoCSS support for rolldown/tsdown",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "peerDependencies": {
+    "@unocss/core": "*",
+    "@unocss/config": "*",
+    "magic-string": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.2",
+    "bumpp": "^10.3.2",
+    "tsdown": "^0.17.4",
+    "typescript": "^5.9.3"
+  }
+}

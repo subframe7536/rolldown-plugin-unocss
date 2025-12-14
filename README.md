@@ -1,6 +1,8 @@
 # rolldown-plugin-unocss
 
-Add basic UnoCSS support for rolldown/tsdown.
+A Rolldown/tsdown plugin for UnoCSS using `@unocss/core`.
+
+ESM only.
 
 ## Install
 
@@ -26,7 +28,7 @@ export default defineConfig({
 
 ```ts
 import { defineConfig } from 'tsdown'
-import { unocss } from 'tsdown-plugin-unocss'
+import { unocss } from 'rolldown-plugin-unocss'
 
 export default defineConfig({
   plugins: [unocss()]
@@ -63,7 +65,7 @@ interface UnoCSSPluginOptions {
 ### Advanced Example
 
 ```ts
-import { unocss } from 'tsdown-plugin-unocss'
+import { unocss } from 'rolldown-plugin-unocss'
 
 export default {
   plugins: [

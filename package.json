@@ -1,12 +1,17 @@
 {
   "name": "rolldown-plugin-unocss",
-  "type": "module",
   "version": "0.0.0",
-  "private": true,
-  "description": "Add basic UnoCSS support for rolldown/tsdown",
-  "exports": {
-    ".": "./dist/index.mjs",
-    "./package.json": "./package.json"
+  "author": "subframe7536",
+  "description": "A Rolldown/tsdown plugin for UnoCSS using @unocss/core",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/subframe7536/rolldown-plugin-unocss#readme",
+  "bugs": {
+    "url": "https://github.com/subframe7536/rolldown-plugin-unocss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subframe7536/rolldown-plugin-unocss.git"
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -14,9 +19,18 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "build": "tsdown",
-    "dev": "tsdown --watch"
+    "dev": "tsdown --watch",
+    "release": "bun run build && bumpp"
   },
   "peerDependencies": {
     "@unocss/core": "*",

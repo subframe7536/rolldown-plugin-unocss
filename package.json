@@ -1,6 +1,6 @@
 {
   "name": "rolldown-plugin-unocss",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "subframe7536",
   "description": "A Rolldown/tsdown plugin for UnoCSS using @unocss/core",
   "type": "module",
